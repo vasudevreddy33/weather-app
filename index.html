@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body class="container-fluid" ng-app="wthrApp" ng-controller="wthrCtrl" ng-style="wthrImage">
+  <div class="text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>
+    {{channelInfo.heading}}
+    </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="b-margn">
+    {{name}}
+      </h2>
+        <h3 class="b-margn clikabl" ng-init="aktiv=true" ng-click="aktiv = !aktiv" ng-show="aktiv">
+    {{tempC}}
+      </h3>
+        <h3 class="b-margn clikabl" ng-click="aktiv=!aktiv" ng-show="!aktiv">
+    {{tempF}}
+      </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <a class="btn-lg btn-primary b-margn">
+    {{description}}
+      <img ng-src="{{icon}}"/>
+    </a>
+        <a class="btn-lg btn-primary b-margn">
+    {{speed}}
+      </a>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="b-margn">
+    {{channelInfo.subHeading.name}}
+    </h2>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
