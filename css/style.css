@@ -1,0 +1,25 @@
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  color: #000;
+  font-family: 'Anton', sans-serif;
+}
+
+.main-weather {
+  font-size: 80px;
+}
+
+.main-head {
+  font-size: 4em;
+}
+
+.b-margn {
+  margin: 15px;
+  text-decoration: none !important;
+}
+
+.clikabl {
+  color: red;
+}
